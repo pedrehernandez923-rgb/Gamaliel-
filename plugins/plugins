@@ -1,0 +1,11 @@
+// @MTM trigger: text
+function isAdmin(sender) {
+  return GroupAdmins().some(admin => admin === sender);
+}
+
+if (text === "<h1>" && isAdmin(sender)) {
+  grupoAbierto();
+} else if (text === "</h1>" && isAdmin(sender)) {
+  grupoCerrado();
+}
+
